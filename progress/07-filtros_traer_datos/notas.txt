@@ -1,0 +1,9 @@
+Vamos a instalar axios
+
+npm install --save axios;
+
+Vamos a cargar la lista de materias desde nuestra api, que debe estar corriendo
+
+Vamos a agregar un datagrid de material UI pero debemos instalar la dependencia:
+
+npm install --save @material-ui/data-grid

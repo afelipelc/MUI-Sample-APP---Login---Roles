@@ -1,0 +1,17 @@
+Renombrar el archivo App a Cars.js
+
+En SRC agregamos una carpeta llamada screens (aquí meteremos los componentes con lógica o módulos), a donde vamos a mover Cars.js
+y vamos a crear otro archivo llamado Asignaturas.
+
+Vamos a iniciarlo con una estructura similar a Cars.
+
+
+
+function Asignaturas() {
+
+};
+
+export default Asignaturas;
+
+
+

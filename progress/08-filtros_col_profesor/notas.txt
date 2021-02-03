@@ -1,0 +1,3 @@
+Vamos a hacer que se muestre el profesor de la asignatura, este se compone de nombre y apellidos de la propiedad profesor, pero algunas materias pueden no traer profesor.
+
+así que, será un campo compuesto pero condicional
