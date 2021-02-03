@@ -45,6 +45,8 @@ const AgregarProfesor = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // enviar el form y será validado en el backend
+    /*
     console.log("Validar formulario y enviar");
 
     const validaciones = {}; // aquí acumularemos las validaciones, después pasarán al state
@@ -89,22 +91,32 @@ const AgregarProfesor = () => {
       setErrores(validaciones);
       return;
     }
-
+*/
     // enviar el formulario
     console.log("Se envía el formulario");
     axios.post('http://localhost:5000/profesores', profesor)
     .then((res) => {
       // docente agregado
-      console.log(res);
+      console.log(res.data);
       setMensaje(res.data.mensaje);
-      // limpiar el state
-      setProfesor({
-        nombre: '',
-        apellidos: '',
-        email: '',
-        telefono: '',
-      });
-      setErrores({});
+
+      // si hubo error
+      if (res.data.error) {
+        const camposError = {};
+        res.data.errores.forEach((item) => {
+          camposError[item.campo] = item.error;
+        });
+        setErrores(camposError); // mostrar los mensajes al usuario
+      } else {
+        // limpiar el state
+        setProfesor({
+          nombre: '',
+          apellidos: '',
+          email: '',
+          telefono: '',
+        });
+        setErrores({});
+      }
     })
     .catch((error) => {
       console.log(error);
