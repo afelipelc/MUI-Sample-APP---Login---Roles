@@ -138,21 +138,20 @@ function Asignaturas() {
               </FormControl>
             </Grid>
             <Grid item xs={6}>
-            <TextField
-              className={classes.margin}
-              id="input-with-icon-textfield"
-              label=""
-              value={buscar || ''}
-              onChange={handleChangeBuscar}
-              onKeyPress={handleOnBuscar}
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment position="start">
-                    <Icon>search</Icon>
-                  </InputAdornment>
-                ),
-              }}
-      />
+              <TextField
+                className={classes.margin}
+                label=""
+                value={buscar || ''}
+                onChange={handleChangeBuscar}
+                onKeyPress={handleOnBuscar}
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="start">
+                      <Icon>search</Icon>
+                    </InputAdornment>
+                  ),
+                }}
+              />
             </Grid>
           </Grid>
         </Grid>

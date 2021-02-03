@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Asignaturas from './screens/Asignaturas';
+import AgregarProfesor from './screens/AgregarProfesor';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Asignaturas />
+    <AgregarProfesor />
   </React.StrictMode>,
   document.getElementById('root')
 );
