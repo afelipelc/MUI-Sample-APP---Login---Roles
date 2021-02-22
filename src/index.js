@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import AgregarProfesor from './screens/AgregarProfesor';
+import HomePageImageSlider from './screens/HomePageImageSlider';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AgregarProfesor />
+    <HomePageImageSlider />
   </React.StrictMode>,
   document.getElementById('root')
 );
