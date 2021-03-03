@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import HomePageImageSlider from './screens/HomePageImageSlider';
+import EjemploGalerias from './screens/EjemploGalerias';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomePageImageSlider />
+    <EjemploGalerias />
   </React.StrictMode>,
   document.getElementById('root')
 );
