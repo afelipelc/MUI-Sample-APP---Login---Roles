@@ -3,9 +3,9 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { useEffect, useState } from 'react';
 import Gallery from 'react-grid-gallery';
-
+import FbImageLibrary from 'react-fb-image-grid';
 import GaleriaImagenes from '../components/GaleriaImagenes';
-import CustomGallery from '../components/CustomGallery';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -73,6 +73,20 @@ function EjemploGalerias() {
     ]);
   }, []);
 
+  useEffect(() => {
+    // https://github.com/Expertizo/react-fb-image-grid
+    setFotos([
+      'https://picsum.photos/id/1018/1000/600/',
+      'https://picsum.photos/id/1015/1000/600/',
+      'https://picsum.photos/id/1019/1000/600/',
+      'https://picsum.photos/id/1018/1000/600/',
+      'https://picsum.photos/id/1015/1000/600/',
+      'https://picsum.photos/id/1019/1000/600/',
+      'https://picsum.photos/id/1018/1000/600/',
+      'https://picsum.photos/id/1015/1000/600/',
+    ]);
+  }, []);
+
   return (
     <Paper className={classes.paper}>
       <Grid container spacing={3}>
@@ -84,6 +98,14 @@ function EjemploGalerias() {
         <Grid item xs={4} >
           {gridImagenes && (
             <Gallery images={gridImagenes} enableImageSelection={false} />
+          )}
+        </Grid>
+        <Grid item xs={4} >
+          {fotos && (
+            <FbImageLibrary
+              images={fotos}
+              renderOverlay={() => 'Ver imagen'}
+            />
           )}
         </Grid>
       </Grid>

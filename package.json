@@ -12,6 +12,7 @@
     "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-fb-image-grid": "^0.1.5",
     "react-grid-gallery": "^0.5.5",
     "react-image-gallery": "^1.0.9",
     "react-items-carousel": "^2.8.0",
