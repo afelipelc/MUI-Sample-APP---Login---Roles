@@ -5,7 +5,7 @@ import Icon from '@material-ui/core/Icon';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { useState } from 'react';
-import axios from 'axios';
+import axios from '../config/axiosClient';
 
 import { campoRequerido, esEmail, esTelefono } from '../utils/validaciones';
 import { Typography } from '@material-ui/core';

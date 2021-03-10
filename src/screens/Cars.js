@@ -1,11 +1,10 @@
-import CarCard from './components/CarCard';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
 import { useState } from 'react';
-
+import CarCard from '../components/CarCard';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
