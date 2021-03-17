@@ -32,7 +32,7 @@ const session = {
       if (this.token()) {
         try {
           const jwtDec = jwt_decode(this.token());
-          user.role = jwtDec.user.role || 'none';
+          user.rol = jwtDec.user.rol || 'ninguno';
         } catch (err) {
           this.setData({});
         }

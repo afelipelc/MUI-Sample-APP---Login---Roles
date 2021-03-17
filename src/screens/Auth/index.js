@@ -132,7 +132,7 @@ const Login = () => {
           </Button>
           <Grid container>
             <Grid item>
-              <Link to="/registrarse"  variant="body2" text="No tengo una cuenta" />
+              <Link to="/registrarme"  variant="body2" text="No tengo una cuenta" />
             </Grid>
           </Grid>
         </form>
