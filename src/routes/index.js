@@ -10,6 +10,8 @@ import EjemploGalerias from '../screens/EjemploGalerias';
 import HomePageImageSlider from '../screens/HomePageImageSlider';
 import Asignaturas from '../screens/Asignaturas';
 import AgregarProfesor from '../screens/AgregarProfesor';
+import RestaurarPassword from '../screens/RestaurarPassword';
+import ForgotPassword from '../screens/ForgotPassword';
 
 
 const Routes = () => (
@@ -17,6 +19,8 @@ const Routes = () => (
     <Route exact path="/" component={Main} />
     <Route exact path="/login" component={Login} />
     <Route exact path="/registrarme" component={Registrarse} />
+    <Route exact path="/olvide-contrasena" component={ForgotPassword} />
+    <Route path="/restablecer-contrasena/:token" component={RestaurarPassword} />
     <PrivateRoute exact path="/cars" component={Cars} />
     <PrivateRoute exact path="/galerias" component={EjemploGalerias} />
     <PrivateRoute exact path="/sliders" component={HomePageImageSlider} />

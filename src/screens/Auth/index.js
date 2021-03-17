@@ -130,9 +130,12 @@ const Login = () => {
               <CircularProgress size={24} />
             )}
           </Button>
-          <Grid container>
+          <Grid container spacing={3}>
             <Grid item>
               <Link to="/registrarme"  variant="body2" text="No tengo una cuenta" />
+            </Grid>
+            <Grid item>
+              <Link to="/olvide-contrasena"  variant="body2" text="Olvidé mi contraseña" />
             </Grid>
           </Grid>
         </form>
