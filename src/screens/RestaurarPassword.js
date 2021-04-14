@@ -49,7 +49,7 @@ const RestaurarPassword = (props) => {
     .catch((error) => {
       console.log(error);
       setMostrar('mensaje');
-      setMensaje('Error al intentar guardar la nueva contraseña.');
+      setMensaje(error.message || 'Error al intentar guardar la nueva contraseña.');
     });
   };
 
