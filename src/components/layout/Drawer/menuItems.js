@@ -4,27 +4,27 @@ const items = [
     text: 'Autos Cards',
     icon: 'folder',
     url: '/cars',
-    // denyFor: ['none'],
+    denyFor: ['ninguno'], // roles que no deben ver esta opcion
   },
   {
     id: 'item-2',
     text: 'Sliders',
     icon: 'view_module',
     url: '/sliders',
-    // denyFor: ['none'],
+    denyFor: ['ninguno'],
   },
   {
     id: 'item-3',
     text: 'Galerías de Imágenes',
     icon: 'recent_actors',
     url: '/galerias',
-    //denyFor: ['none', 'role2'],
+    denyFor: ['ninguno'],
   },
   {
     id: 'item-4',
     text: 'Asignaturas / Profesores',
     icon: 'ballot',
-    denyFor: ['none', 'role2'],
+    denyFor: ['ninguno', 'usuario'],
     childs: [
       {
         id: 'sub-1',

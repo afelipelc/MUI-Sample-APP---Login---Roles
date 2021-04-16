@@ -15,7 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import menuItems from './menuItems';
-// import { useSessionState } from '../../../sessionContext';
+import { useSessionState } from '../../../sessionContext';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -63,7 +63,7 @@ const MyDrawer = ({ open, onClose }) => {
   const matches = useMediaQuery('(min-width:1024px)');
   const [openSub, setOpenSub] = React.useState(null);
 
-  // const { user } = useSessionState(); // read context value props as user
+  const { user } = useSessionState(); // read context value props as user
 
   const handleSubmenu = (id) => {
     setOpenSub(openSub === id ? null : id);
@@ -105,8 +105,7 @@ const MyDrawer = ({ open, onClose }) => {
       </div>
       <Divider />
       <List>
-        {/*{menuItems.filter((option) => !option.denyFor.includes(user ? user.role || 'none' : 'none')).map((item) => ( */}
-        {menuItems.map((item) => (
+        {menuItems.filter((option) => !option.denyFor.includes(user ? user.rol || 'ninguno' : 'ninguno')).map((item) => (
           <div key={item.id}>
             <ListItem
               button
